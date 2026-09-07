@@ -270,20 +270,13 @@
 
         <div class='item f-cb'>
             <div class='label'>账号：</div>
-            <div class='input'><input placeholder="输入手机号或账号" v-model="account"></div>
+            <div class='input'><input placeholder="输入账号" v-model="account"></div>
         </div>
 
         <div class='item f-cb'>
             <div class='label'>密码：</div>
-            <div class='input'><input placeholder="输入6-18位英文或数字密钥" v-model="passWord"></div>
-        </div>
-
-
-        <div style='width:80%;margin:0 auto;' class='f-cb'>
-            <div class='setPasswordShowBtn' @click='setPasswordShowBtn'>设置密码</div>
-            <div class='phoneShowBtn' @click='phoneShowBtn'>手机登陆</div>
-
-        </div>
+            <div class='input'><input placeholder="输入密钥" v-model="passWord"></div>
+             </div>
         <div v-if="isShowTip" style="color: red;">{{tipText}}</div>
         <div class='enterBtn' @click='enterBtn'>进入游戏</div>
         <div class="wxShowBtn" @click='enterWxBtn'>微信进入</div>
